@@ -1,0 +1,17 @@
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<div id="wrapper">
+ <img src="goquery.png" align="left"/>
+  <li class="input-button">
+    <div class="input-wrapper" style="float:left;">
+      <input type="text" id="KUNDE" placeholder="Paste select Query" value="" />
+      <div id="loader" style="display:none;">
+        <img src="loader.gif" />
+      </div>
+    </div>
+  </li>
+ <div style="float:left;margin-left:10px;">
+      <button id="buton" style="margin-top: 10px;" type="button" class="btn-style" value="search" onclick="find();" >Go</button>
+    </div>
+</div>

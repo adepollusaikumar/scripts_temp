@@ -1,0 +1,18 @@
+{{template "header"}}
+<form method="POST" class="container" style="padding-top: 3px;">
+
+<table border=0>
+    <tr> <td width=46%><textarea style="margin: 0px;width: 630px;" type="text"  id="query"  name="query" placeholder="Paste select Query"  rows="25" >{{.Source}}</textarea></td>
+    <td width=8%><input type="submit"  value="Format Query " style="width:109px;padding-left: 15px;" ></td>
+    <input type="button" value="Primary" onclick="copy_to_clipboard('query');">
+     <input type="button" value="Secondary" onclick="copy_to_clipboard('result');">
+    <td width=46%><textarea id="result" style="margin: 0px;width: 630px;" type="text"  name="result"  value="" rows="25" >{{.Query}}</textarea></td></tr>
+    <tr><td><br><br><br><br><br><br><br><br><br><br><br><br></td></tr>
+</form>
+
+
+
+
+
+{{template "footer"}}
+
